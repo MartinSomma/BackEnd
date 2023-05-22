@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-class ProductManager {
+export default class ProductManager {
   #products;
   #error;
   #file;
@@ -62,10 +62,10 @@ class ProductManager {
 
 }
 
-const manager = new ProductManager('./products.json');
+//export const manager = new ProductManager('./products.json');
 
-
-console.log(await manager.getProducts())
+/*
+//console.log(await manager.getProducts())
 
 
 //Protocolo de prueba
@@ -116,3 +116,4 @@ console.log(await manager.getProductById(3)) //devuelve producto con id=2
 console.log(await manager.getProductById(9)) //devuelve 'not found'
 
 
+*/
